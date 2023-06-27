@@ -1,0 +1,609 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.5.1",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_s3_bucket.data_source",
+                    "mode": "managed",
+                    "type": "aws_s3_bucket",
+                    "name": "data_source",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 0,
+                    "values": {
+                        "acceleration_status": "",
+                        "acl": null,
+                        "arn": "arn:aws:s3:::raul-tflearning-2023-data-source",
+                        "bucket": "raul-tflearning-2023-data-source",
+                        "bucket_domain_name": "raul-tflearning-2023-data-source.s3.amazonaws.com",
+                        "bucket_prefix": "",
+                        "bucket_regional_domain_name": "raul-tflearning-2023-data-source.s3.us-east-1.amazonaws.com",
+                        "cors_rule": [],
+                        "force_destroy": false,
+                        "grant": [
+                            {
+                                "id": "11b55e788a9a957731ccee4b59671c333418797385b9f8853057b3a0b6825ea2",
+                                "permissions": [
+                                    "FULL_CONTROL"
+                                ],
+                                "type": "CanonicalUser",
+                                "uri": ""
+                            }
+                        ],
+                        "hosted_zone_id": "Z3AQBSTGFYJSTF",
+                        "id": "raul-tflearning-2023-data-source",
+                        "lifecycle_rule": [],
+                        "logging": [],
+                        "object_lock_configuration": [],
+                        "object_lock_enabled": false,
+                        "policy": "",
+                        "region": "us-east-1",
+                        "replication_configuration": [],
+                        "request_payer": "BucketOwner",
+                        "server_side_encryption_configuration": [
+                            {
+                                "rule": [
+                                    {
+                                        "apply_server_side_encryption_by_default": [
+                                            {
+                                                "kms_master_key_id": "",
+                                                "sse_algorithm": "AES256"
+                                            }
+                                        ],
+                                        "bucket_key_enabled": false
+                                    }
+                                ]
+                            }
+                        ],
+                        "tags": {
+                            "Project": "raul-tflearning-2023"
+                        },
+                        "tags_all": {
+                            "Project": "raul-tflearning-2023"
+                        },
+                        "timeouts": null,
+                        "versioning": [
+                            {
+                                "enabled": false,
+                                "mfa_delete": false
+                            }
+                        ],
+                        "website": [],
+                        "website_domain": null,
+                        "website_endpoint": null
+                    },
+                    "sensitive_values": {
+                        "cors_rule": [],
+                        "grant": [
+                            {
+                                "permissions": [
+                                    false
+                                ]
+                            }
+                        ],
+                        "lifecycle_rule": [],
+                        "logging": [],
+                        "object_lock_configuration": [],
+                        "replication_configuration": [],
+                        "server_side_encryption_configuration": [
+                            {
+                                "rule": [
+                                    {
+                                        "apply_server_side_encryption_by_default": [
+                                            {}
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "tags": {},
+                        "tags_all": {},
+                        "versioning": [
+                            {}
+                        ],
+                        "website": []
+                    }
+                },
+                {
+                    "address": "aws_s3_bucket_public_access_block.data_source_access_block",
+                    "mode": "managed",
+                    "type": "aws_s3_bucket_public_access_block",
+                    "name": "data_source_access_block",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 0,
+                    "values": {
+                        "block_public_acls": false,
+                        "block_public_policy": false,
+                        "bucket": "raul-tflearning-2023-data-source",
+                        "id": "raul-tflearning-2023-data-source",
+                        "ignore_public_acls": false,
+                        "restrict_public_buckets": false
+                    },
+                    "sensitive_values": {}
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "aws_s3_bucket.data_source",
+            "mode": "managed",
+            "type": "aws_s3_bucket",
+            "name": "data_source",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "no-op"
+                ],
+                "before": {
+                    "acceleration_status": "",
+                    "acl": null,
+                    "arn": "arn:aws:s3:::raul-tflearning-2023-data-source",
+                    "bucket": "raul-tflearning-2023-data-source",
+                    "bucket_domain_name": "raul-tflearning-2023-data-source.s3.amazonaws.com",
+                    "bucket_prefix": "",
+                    "bucket_regional_domain_name": "raul-tflearning-2023-data-source.s3.us-east-1.amazonaws.com",
+                    "cors_rule": [],
+                    "force_destroy": false,
+                    "grant": [
+                        {
+                            "id": "11b55e788a9a957731ccee4b59671c333418797385b9f8853057b3a0b6825ea2",
+                            "permissions": [
+                                "FULL_CONTROL"
+                            ],
+                            "type": "CanonicalUser",
+                            "uri": ""
+                        }
+                    ],
+                    "hosted_zone_id": "Z3AQBSTGFYJSTF",
+                    "id": "raul-tflearning-2023-data-source",
+                    "lifecycle_rule": [],
+                    "logging": [],
+                    "object_lock_configuration": [],
+                    "object_lock_enabled": false,
+                    "policy": "",
+                    "region": "us-east-1",
+                    "replication_configuration": [],
+                    "request_payer": "BucketOwner",
+                    "server_side_encryption_configuration": [
+                        {
+                            "rule": [
+                                {
+                                    "apply_server_side_encryption_by_default": [
+                                        {
+                                            "kms_master_key_id": "",
+                                            "sse_algorithm": "AES256"
+                                        }
+                                    ],
+                                    "bucket_key_enabled": false
+                                }
+                            ]
+                        }
+                    ],
+                    "tags": {
+                        "Project": "raul-tflearning-2023"
+                    },
+                    "tags_all": {
+                        "Project": "raul-tflearning-2023"
+                    },
+                    "timeouts": null,
+                    "versioning": [
+                        {
+                            "enabled": false,
+                            "mfa_delete": false
+                        }
+                    ],
+                    "website": [],
+                    "website_domain": null,
+                    "website_endpoint": null
+                },
+                "after": {
+                    "acceleration_status": "",
+                    "acl": null,
+                    "arn": "arn:aws:s3:::raul-tflearning-2023-data-source",
+                    "bucket": "raul-tflearning-2023-data-source",
+                    "bucket_domain_name": "raul-tflearning-2023-data-source.s3.amazonaws.com",
+                    "bucket_prefix": "",
+                    "bucket_regional_domain_name": "raul-tflearning-2023-data-source.s3.us-east-1.amazonaws.com",
+                    "cors_rule": [],
+                    "force_destroy": false,
+                    "grant": [
+                        {
+                            "id": "11b55e788a9a957731ccee4b59671c333418797385b9f8853057b3a0b6825ea2",
+                            "permissions": [
+                                "FULL_CONTROL"
+                            ],
+                            "type": "CanonicalUser",
+                            "uri": ""
+                        }
+                    ],
+                    "hosted_zone_id": "Z3AQBSTGFYJSTF",
+                    "id": "raul-tflearning-2023-data-source",
+                    "lifecycle_rule": [],
+                    "logging": [],
+                    "object_lock_configuration": [],
+                    "object_lock_enabled": false,
+                    "policy": "",
+                    "region": "us-east-1",
+                    "replication_configuration": [],
+                    "request_payer": "BucketOwner",
+                    "server_side_encryption_configuration": [
+                        {
+                            "rule": [
+                                {
+                                    "apply_server_side_encryption_by_default": [
+                                        {
+                                            "kms_master_key_id": "",
+                                            "sse_algorithm": "AES256"
+                                        }
+                                    ],
+                                    "bucket_key_enabled": false
+                                }
+                            ]
+                        }
+                    ],
+                    "tags": {
+                        "Project": "raul-tflearning-2023"
+                    },
+                    "tags_all": {
+                        "Project": "raul-tflearning-2023"
+                    },
+                    "timeouts": null,
+                    "versioning": [
+                        {
+                            "enabled": false,
+                            "mfa_delete": false
+                        }
+                    ],
+                    "website": [],
+                    "website_domain": null,
+                    "website_endpoint": null
+                },
+                "after_unknown": {},
+                "before_sensitive": {
+                    "cors_rule": [],
+                    "grant": [
+                        {
+                            "permissions": [
+                                false
+                            ]
+                        }
+                    ],
+                    "lifecycle_rule": [],
+                    "logging": [],
+                    "object_lock_configuration": [],
+                    "replication_configuration": [],
+                    "server_side_encryption_configuration": [
+                        {
+                            "rule": [
+                                {
+                                    "apply_server_side_encryption_by_default": [
+                                        {}
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "tags": {},
+                    "tags_all": {},
+                    "versioning": [
+                        {}
+                    ],
+                    "website": []
+                },
+                "after_sensitive": {
+                    "cors_rule": [],
+                    "grant": [
+                        {
+                            "permissions": [
+                                false
+                            ]
+                        }
+                    ],
+                    "lifecycle_rule": [],
+                    "logging": [],
+                    "object_lock_configuration": [],
+                    "replication_configuration": [],
+                    "server_side_encryption_configuration": [
+                        {
+                            "rule": [
+                                {
+                                    "apply_server_side_encryption_by_default": [
+                                        {}
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "tags": {},
+                    "tags_all": {},
+                    "versioning": [
+                        {}
+                    ],
+                    "website": []
+                }
+            }
+        },
+        {
+            "address": "aws_s3_bucket_public_access_block.data_source_access_block",
+            "mode": "managed",
+            "type": "aws_s3_bucket_public_access_block",
+            "name": "data_source_access_block",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "update"
+                ],
+                "before": {
+                    "block_public_acls": true,
+                    "block_public_policy": true,
+                    "bucket": "raul-tflearning-2023-data-source",
+                    "id": "raul-tflearning-2023-data-source",
+                    "ignore_public_acls": true,
+                    "restrict_public_buckets": true
+                },
+                "after": {
+                    "block_public_acls": false,
+                    "block_public_policy": false,
+                    "bucket": "raul-tflearning-2023-data-source",
+                    "id": "raul-tflearning-2023-data-source",
+                    "ignore_public_acls": false,
+                    "restrict_public_buckets": false
+                },
+                "after_unknown": {},
+                "before_sensitive": {},
+                "after_sensitive": {}
+            }
+        }
+    ],
+    "prior_state": {
+        "format_version": "1.0",
+        "terraform_version": "1.5.1",
+        "values": {
+            "root_module": {
+                "resources": [
+                    {
+                        "address": "data.aws_caller_identity.current",
+                        "mode": "data",
+                        "type": "aws_caller_identity",
+                        "name": "current",
+                        "provider_name": "registry.terraform.io/hashicorp/aws",
+                        "schema_version": 0,
+                        "values": {
+                            "account_id": "121175539013",
+                            "arn": "arn:aws:iam::121175539013:user/Raul",
+                            "id": "121175539013",
+                            "user_id": "AIDARYNU77VC4ZUJDLSE4"
+                        },
+                        "sensitive_values": {}
+                    },
+                    {
+                        "address": "data.aws_region.current",
+                        "mode": "data",
+                        "type": "aws_region",
+                        "name": "current",
+                        "provider_name": "registry.terraform.io/hashicorp/aws",
+                        "schema_version": 0,
+                        "values": {
+                            "description": "US East (N. Virginia)",
+                            "endpoint": "ec2.us-east-1.amazonaws.com",
+                            "id": "us-east-1",
+                            "name": "us-east-1"
+                        },
+                        "sensitive_values": {}
+                    },
+                    {
+                        "address": "aws_s3_bucket.data_source",
+                        "mode": "managed",
+                        "type": "aws_s3_bucket",
+                        "name": "data_source",
+                        "provider_name": "registry.terraform.io/hashicorp/aws",
+                        "schema_version": 0,
+                        "values": {
+                            "acceleration_status": "",
+                            "acl": null,
+                            "arn": "arn:aws:s3:::raul-tflearning-2023-data-source",
+                            "bucket": "raul-tflearning-2023-data-source",
+                            "bucket_domain_name": "raul-tflearning-2023-data-source.s3.amazonaws.com",
+                            "bucket_prefix": "",
+                            "bucket_regional_domain_name": "raul-tflearning-2023-data-source.s3.us-east-1.amazonaws.com",
+                            "cors_rule": [],
+                            "force_destroy": false,
+                            "grant": [
+                                {
+                                    "id": "11b55e788a9a957731ccee4b59671c333418797385b9f8853057b3a0b6825ea2",
+                                    "permissions": [
+                                        "FULL_CONTROL"
+                                    ],
+                                    "type": "CanonicalUser",
+                                    "uri": ""
+                                }
+                            ],
+                            "hosted_zone_id": "Z3AQBSTGFYJSTF",
+                            "id": "raul-tflearning-2023-data-source",
+                            "lifecycle_rule": [],
+                            "logging": [],
+                            "object_lock_configuration": [],
+                            "object_lock_enabled": false,
+                            "policy": "",
+                            "region": "us-east-1",
+                            "replication_configuration": [],
+                            "request_payer": "BucketOwner",
+                            "server_side_encryption_configuration": [
+                                {
+                                    "rule": [
+                                        {
+                                            "apply_server_side_encryption_by_default": [
+                                                {
+                                                    "kms_master_key_id": "",
+                                                    "sse_algorithm": "AES256"
+                                                }
+                                            ],
+                                            "bucket_key_enabled": false
+                                        }
+                                    ]
+                                }
+                            ],
+                            "tags": {
+                                "Project": "raul-tflearning-2023"
+                            },
+                            "tags_all": {
+                                "Project": "raul-tflearning-2023"
+                            },
+                            "timeouts": null,
+                            "versioning": [
+                                {
+                                    "enabled": false,
+                                    "mfa_delete": false
+                                }
+                            ],
+                            "website": [],
+                            "website_domain": null,
+                            "website_endpoint": null
+                        },
+                        "sensitive_values": {
+                            "cors_rule": [],
+                            "grant": [
+                                {
+                                    "permissions": [
+                                        false
+                                    ]
+                                }
+                            ],
+                            "lifecycle_rule": [],
+                            "logging": [],
+                            "object_lock_configuration": [],
+                            "replication_configuration": [],
+                            "server_side_encryption_configuration": [
+                                {
+                                    "rule": [
+                                        {
+                                            "apply_server_side_encryption_by_default": [
+                                                {}
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "tags": {},
+                            "tags_all": {},
+                            "versioning": [
+                                {}
+                            ],
+                            "website": []
+                        }
+                    },
+                    {
+                        "address": "aws_s3_bucket_public_access_block.data_source_access_block",
+                        "mode": "managed",
+                        "type": "aws_s3_bucket_public_access_block",
+                        "name": "data_source_access_block",
+                        "provider_name": "registry.terraform.io/hashicorp/aws",
+                        "schema_version": 0,
+                        "values": {
+                            "block_public_acls": true,
+                            "block_public_policy": true,
+                            "bucket": "raul-tflearning-2023-data-source",
+                            "id": "raul-tflearning-2023-data-source",
+                            "ignore_public_acls": true,
+                            "restrict_public_buckets": true
+                        },
+                        "sensitive_values": {},
+                        "depends_on": [
+                            "aws_s3_bucket.data_source"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "configuration": {
+        "provider_config": {
+            "aws": {
+                "name": "aws",
+                "full_name": "registry.terraform.io/hashicorp/aws",
+                "expressions": {
+                    "region": {
+                        "constant_value": "us-east-1"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_s3_bucket.data_source",
+                    "mode": "managed",
+                    "type": "aws_s3_bucket",
+                    "name": "data_source",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "bucket": {
+                            "constant_value": "raul-tflearning-2023-data-source"
+                        },
+                        "tags": {
+                            "constant_value": {
+                                "Project": "raul-tflearning-2023"
+                            }
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "aws_s3_bucket_public_access_block.data_source_access_block",
+                    "mode": "managed",
+                    "type": "aws_s3_bucket_public_access_block",
+                    "name": "data_source_access_block",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "block_public_acls": {
+                            "constant_value": false
+                        },
+                        "block_public_policy": {
+                            "constant_value": false
+                        },
+                        "bucket": {
+                            "references": [
+                                "aws_s3_bucket.data_source.id",
+                                "aws_s3_bucket.data_source"
+                            ]
+                        },
+                        "ignore_public_acls": {
+                            "constant_value": false
+                        },
+                        "restrict_public_buckets": {
+                            "constant_value": false
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.aws_caller_identity.current",
+                    "mode": "data",
+                    "type": "aws_caller_identity",
+                    "name": "current",
+                    "provider_config_key": "aws",
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.aws_region.current",
+                    "mode": "data",
+                    "type": "aws_region",
+                    "name": "current",
+                    "provider_config_key": "aws",
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "aws_s3_bucket.data_source",
+            "attribute": [
+                "id"
+            ]
+        }
+    ],
+    "timestamp": "2023-06-21T22:01:25Z"
+}
